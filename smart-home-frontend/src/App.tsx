@@ -60,7 +60,7 @@ const App: React.FC = () => {
     }
 
     const ajustarFogao = () => {
-        const novaPotencia = dispositivos.cozinha.fogaoPotencia === 5 ? 1 : dispositivos.cozinha.fogaoPotencia + 1;
+        const novaPotencia = dispositivos.cozinha.fogaoPotencia === 3 ? 1 : dispositivos.cozinha.fogaoPotencia + 1;
         socket.emit('ajustarFogao', novaPotencia);
     };
 
@@ -113,21 +113,6 @@ const App: React.FC = () => {
                         </div>
                         <div className='fogaoContainer'>
                             <div className={`fogo potencia-${dispositivos.cozinha.fogaoPotencia} ${dispositivos.cozinha.fogaoOn ? 'on' : 'off'}`}>
-                                <div className="fogo-left">
-                                    <div className="main-fogo"></div>
-                                    <div className="particle-fogo"></div>
-                                </div>
-                                <div className="fogo-center">
-                                    <div className="main-fogo"></div>
-                                    <div className="particle-fogo"></div>
-                                </div>
-                                <div className="fogo-right">
-                                    <div className="main-fogo"></div>
-                                    <div className="particle-fogo"></div>
-                                </div>
-                                <div className="fogo-bottom">
-                                    <div className="main-fogo"></div>
-                                </div>
                             </div>
                             <img src='imgs\stove.png' className={`fogao status ${dispositivos.cozinha.fogaoOn ? 'on' : 'off'}`} />
                             {dispositivos.cozinha.fogaoOn && <button onClick={ajustarFogao} className='potencia'>{`(Potência: ${dispositivos.cozinha.fogaoPotencia})`}</button>}

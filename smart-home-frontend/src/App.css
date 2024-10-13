@@ -254,155 +254,16 @@ body {
 }
 
 
-.fogo {
-    position: absolute;
-    top: 17px;
-    left: 24%;
-    width: 50px;
-    height: 30px;
-    background-color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .fogo.off {
     display: none;
 }
 
-.fogo.potencia-1 {
-    top: 20px;
-}
-
-.fogo.potencia-2 {
-    top: 15px;
-}
-
-.fogo.potencia-3 {
-    top: 10px;
-}
-
-.fogo.potencia-4 {
-    top: 5px;
-}
-
-.fogo.potencia-5 {
-    top: 1px;
-}
 
 .fogo-center {
     position: absolute;
     height: 100%;
     width: 100%;
     animation: scaleUpDown 3s ease-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.fogo-center .main-fogo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(farthest-corner at 10px 0, #d43300 0%, #ef5a00 95%);
-    transform: scaleX(0.8) rotate(45deg);
-    border-radius: 0 40% 60% 40%;
-    filter: drop-shadow(0 0 10px #d43322);
-}
-
-.fogo-center .particle-fogo {
-    position: absolute;
-    top: 60%;
-    left: 45%;
-    width: 10px;
-    height: 10px;
-    background-color: #ef5a00;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px #d43322);
-    animation: particleUp 2s ease-out 0;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.fogo-right {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    animation: shake 2s ease-out 0;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.fogo-right .main-fogo {
-    position: absolute;
-    top: 15%;
-    right: -25%;
-    width: 80%;
-    height: 80%;
-    background-color: #ef5a00;
-    transform: scaleX(0.8) rotate(45deg);
-    border-radius: 0 40% 60% 40%;
-    filter: drop-shadow(0 0 10px #d43322);
-}
-
-.fogo-right .particle-fogo {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: #ef5a00;
-    transform: scaleX(0.8) rotate(45deg);
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px #d43322);
-    animation: particleUp 2s ease-out 0;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.fogo-left {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    animation: shake 3s ease-out 0;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.fogo-left .main-fogo {
-    position: absolute;
-    top: 15%;
-    left: -20%;
-    width: 80%;
-    height: 80%;
-    background-color: #ef5a00;
-    transform: scaleX(0.8) rotate(45deg);
-    border-radius: 0 40% 60% 40%;
-    filter: drop-shadow(0 0 10px #d43322);
-}
-
-.fogo-left .particle-fogo {
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 10%;
-    height: 10%;
-    background-color: #ef5a00;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px #d43322);
-    animation: particleUp 3s infinite ease-out 0;
-    animation-fill-mode: both;
-}
-
-.fogo-bottom .main-fogo {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    width: 100%;
-    height: 75%;
-    background-color: #ff7800;
-    transform: scaleX(0.8) rotate(45deg);
-    border-radius: 0 40% 100% 40%;
-    filter: blur(10px);
-    animation: glow 2s ease-out 0;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }

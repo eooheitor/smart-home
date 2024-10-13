@@ -1,3 +1,11 @@
+// Comportamentos Esperados
+// Luzes Inteligentes: Em todos os cômodos, as luzes podem ser ligadas e desligadas. O estado das luzes deve ser sincronizado entre todos os clientes, e qualquer mudança deve ser refletida imediatamente para todos os usuários conectados.
+// Ar-Condicionado e Ventilador: O usuário pode ligar/desligar e ajustar a temperatura ou velocidade. Essas mudanças devem ser visíveis para todos os clientes conectados. Ao ajustar a temperatura do ar-condicionado ou a velocidade do ventilador, os valores devem ser exibidos na interface.
+// Televisão: O controle da TV inclui ligar/desligar e mudar de canal. Os canais devem ser pré-definidos e exibidos na interface ao mudar.
+// Geladeira Inteligente: A geladeira monitorará a temperatura interna e emitirá um alerta se a temperatura subir acima do limite definido. Este comportamento é monitorado automaticamente e o alerta deve aparecer na interface se a condição for verdadeira.
+// Fogão Elétrico: O usuário pode ligar e desligar o fogão e ajustar o nível de potência. As mudanças de potência devem ser refletidas para todos os clientes.
+// Cortinas Automáticas: O controle permite abrir ou fechar as cortinas. O estado das cortinas deve ser visível na interface e sincronizado com todos os clientes conectados
+
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import './App.css';
